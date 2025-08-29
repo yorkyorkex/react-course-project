@@ -14,11 +14,15 @@ function Booklist() {
 }
 
 const Book = () => {
+  const title = 'The Silent Patient: The Recordr'
+  const author = 'Alex Michaelides'
+  const img = './images/book-1.jpg'
+
   return (
     <article className="book">
-      <Image />
-      <Title />
-      <Author />
+      <img src={img} alt={title} />
+      <h2>{title}</h2>
+      <h4>{author.toUpperCase}</h4>
     </article>
   )
 }
