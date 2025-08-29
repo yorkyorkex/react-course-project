@@ -23,13 +23,5 @@ const Book = () => {
   )
 }
 
-const Image = () => (
-  <img src="./images/book-1.jpg" alt="The Silent Patient: The Recordr" />
-)
-const Title = () => <h2>The Silent Patient: The Recordr</h2>
-const Author = () => {
-  return <h2>Alex Michaelides</h2>
-}
-
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(<Booklist />)
