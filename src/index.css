@@ -25,6 +25,9 @@ body {
     align-items: start;
   }
 }
+.book p {
+  margin: 1rem 0 0.5rem;
+}
 .book {
   background: #fff;
   border-radius: 1rem;
