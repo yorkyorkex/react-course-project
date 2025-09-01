@@ -18,18 +18,24 @@ const books = [
 ]
 
 function Booklist() {
+  const someVariable = 'Hello World'
+  const displayValue = () => {
+    console.log(someVariable)
+  }
+
   return (
     <section className="booklist">
       {books.map((book) => {
-        return <Book {...book} key={book.id} />
+        return <Book {...book} key={book.id} displayValue={displayValue} />
       })}
     </section>
   )
 }
 
-const Book = ({ author, title, img }) => {
+const Book = ({ author, title, img, displayValue }) => {
   const handleButtonClick = () => {
     alert(title)
+    displayValue()
   }
   return (
     <article className="book">
