@@ -33,14 +33,11 @@ function Booklist() {
 }
 
 const Book = ({ author, title, img, getBook, id }) => {
-  const getSingleBook = () => {
-    getBook(id)
-  }
   return (
     <article className="book">
       <img src={img} alt={title} />
       <h2>{title}</h2>
-      <button onClick={getSingleBook}>Click Me</button>
+      <button onClick={() => getBook(id)}>Click Me</button>
       <h4>{author}</h4>
     </article>
   )
